@@ -88,21 +88,14 @@ def summarize(text):
 
 
 def main():
-	'''NLP app will be coded here'''
 	st.title("Text Summarization using Deep Learning")
-	st.subheader("Natural Language Processing")
-
-	# text summarizer
 	st.text("Summarizing your text")
 	message = st.text_area("Enter your text","please type here")
 	if st.button("Summarize"):
 		summary_result = summarize(message)
 		st.success(summary_result) 
-
 	st.sidebar.subheader("Text Summarizer")
-	st.sidebar.text("Its an Natural Language Processing app built using various NLP packages and streamlit")
-	st.sidebar.text("Thank you to streamlit team")	
-	st.sidebar.subheader("Thanks for using the app.....")	
+	st.sidebar.text("NLP app deployed with streamlit")
 
 if __name__ == '__main__':
 	main()
