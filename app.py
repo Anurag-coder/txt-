@@ -15,6 +15,7 @@ from tensorflow.keras.models import model_from_json
 import pickle
 from attention import AttentionLayer
 
+
 max_text_len=30
 max_summary_len=8
 
